@@ -1,0 +1,17 @@
+<%- include('./partials/header.ejs') %>
+
+<h1>saldo: <%= userBalance[1].userBalance %></h1>
+<table style="border: 1px solid black; border-collapse: collapse; padding: 50px;">
+    <tr>
+      <th>Tanggal</th>
+      <th>jumlah</th>
+    </tr>
+    <% data.forEach(item => { %>
+    <tr>
+      <td><%= item.tanggal %></td>
+      <td><%= item.jumlah %></td>
+    </tr>
+    <% }) %>
+  </table>
+
+<%- include('./partials/footer.ejs') %>
